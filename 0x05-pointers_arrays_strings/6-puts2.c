@@ -1,21 +1,18 @@
 #include "main.h"
 #include <string.h>
-
 /**
- * puts2 - puts string twice
- *
- * @str: string to put twice
+ * puts2 - Entry point
+ * function that prints every other character of a string
+ * @str: parameter of a pointer
  */
 void puts2(char *str)
 {
-	int i;
+	int len, i;
 
-	for (i = 0; i < _strlen(str); i++)
+	len = strlen(str);
+	for (i = 0; i < len; i += 2)
 	{
-		if (i % 2 == 0)
-		{
-			_putchar(str[i]);
-		}
+		_putchar(str[i]);
 	}
-	_putchar('\n');
+	_putchar(10);
 }
