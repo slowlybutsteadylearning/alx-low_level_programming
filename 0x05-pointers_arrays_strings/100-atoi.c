@@ -32,4 +32,4 @@ int _atoi(char *s)
 	}
 	nah *= min;
 	return (nah);
-}}
+}
