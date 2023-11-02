@@ -1,6 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
-i
+
+/**
+ * mul - Entry point
+ * function thatr reallocates a memory block using malloc and free
+ * @ptr:A pointer to the memory previously allocated
+ * @old_size: size in bytes of the allocated space for ptr
+ * @new_size: size in bytes for the new memory block
+ * Return: on Success - NULL if new_size == 0 and ptr is not NULL
+ * or ptr if new_size == old_size
+ * or a pointer to the allocated memory
+ */
 
 int is_digit_string(const char *str) {
     while (*str) {
